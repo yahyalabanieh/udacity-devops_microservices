@@ -13,7 +13,7 @@ COPY model_data /application/model_data
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
 RUN pip install --upgrade pip &&\
-    install -r requirements.txt
+    pip install -r requirements.txt
 
 ## Step 4:
 # Expose port 80
